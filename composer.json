@@ -1,11 +1,29 @@
 {
-    "name": "scws/pscws4",
+    "name": "xushre/pscws4",
     "description": "PSCWS 是英文 PHP Simple Chinese Words Segmentation 的头字母缩写，它是 SCWS 项目的前身。",
     "type": "library",
     "license": "BSD",
     "autoload": {
         "psr-4": {
-            "SCWS\\": ["src/"]
+            "SCWS\\": [
+                "src/"
+            ]
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.0"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
     }
 }
